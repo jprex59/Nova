@@ -1,0 +1,154 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: black;
+	height: 300vh;
+	color: white !important;
+	font-family: "Orbitron", sans-serif !important;
+}
+
+.title {
+	text-align: center;
+	color: white !important;
+	font-family: "Noto Sans SC", sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+.container-presentation {
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.presentation-panel {
+	width: 50%;
+	height: 630px;
+	display: flex;
+	background-repeat: no-repeat;
+	filter: grayscale(95%);
+	opacity: 0.6;
+	transition: all 0.7s;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.panel-responsive {
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	height: 0;
+	transition: 0.3s all;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.336);
+	font-family: "Orbitron", sans-serif;
+}
+
+.presentation-panel:hover .info {
+	height: 100%;
+	padding: 10px;
+}
+.description {
+	text-align: justify;
+	font-family: "Orbitron", sans-serif;
+	color: #fff;
+	line-height: 30px;
+}
+.panel1 {
+	background-image: url(../images/Presentation/spaceart6.jpg);
+	background-size: 1200px;
+	background-position: -320px bottom;
+}
+.panel2 {
+	background-image: url(../images/Presentation/spaceart5.jpg);
+	background-size: 1200px;
+	background-position: -710px;
+}
+.panel3 {
+	background-image: url(../images/Presentation/spaceart4.jpg);
+	background-size: 1250px;
+	background-position: -700px;
+}
+
+.panel4 {
+	background-image: url(../images/Presentation/spaceart3.jpeg);
+	background-size: 520px;
+	background-position: center;
+}
+
+.presentation-panel:hover {
+	filter: grayscale(0%);
+	opacity: 1.5;
+}
+
+nav {
+	transform: translateX(-4000px);
+	transition: all 0.5s;
+	width: 100%;
+	top: 0em;
+}
+
+nav.sticky {
+	transform: translate(0);
+	position: fixed;
+}
+.container-tile {
+	border-radius: 10px;
+	padding: 5px;
+	background-size: contain;
+	background-position: center;
+}
+
+.section-tile {
+	background-image: url("../images/Presentation/bg.jpeg");
+	background-repeat: repeat;
+	background-size: 1000px;
+}
+.is-child {
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.subtitle {
+	color: #fff !important;
+}
+.tile .subtitle {
+	margin-top: 10px !important;
+}
+
+@media all and (max-width: 700px) {
+	.panel-responsive {
+		width: 100%;
+	}
+	.presentation-panel {
+		height: 300px;
+		opacity: 0.7;
+		filter: grayscale(0%);
+	}
+	.info {
+		display: none;
+	}
+}
