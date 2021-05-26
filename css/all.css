@@ -11,3 +11,11 @@ body {
 	color: white !important;
 	font-family: "Orbitron", sans-serif !important;
 }
+.title,
+p,
+ul,
+li,
+.subtitle,
+button {
+	font-family: "Orbitron", sans-serif !important;
+}
