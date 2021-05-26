@@ -32,27 +32,15 @@
 				<div class="navbar-start">
 					<a href="index.html#about" class="navbar-item"> About </a>
 
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a href="music.html" class="navbar-link"> Musics </a>
-
-						<div class="navbar-dropdown">
-							<a class="navbar-item"> About </a>
-							<a class="navbar-item"> Jobs </a>
-							<a class="navbar-item"> Contact </a>
-							<hr class="navbar-divider" />
-							<a class="navbar-item"> Report an issue </a>
-						</div>
-					</div>
+					<a href="music.html" class="navbar-item"> Musics </a>
 
 					<div class="navbar-item has-dropdown is-hoverable">
 						<a href="projets.html" class="navbar-link"> Projets </a>
 
 						<div class="navbar-dropdown">
-							<a class="navbar-item"> About </a>
-							<a class="navbar-item"> Jobs </a>
-							<a class="navbar-item"> Contact </a>
-							<hr class="navbar-divider" />
-							<a class="navbar-item"> Report an issue </a>
+							<a class="navbar-item"> Projet1 </a>
+							<a class="navbar-item"> Projet2 </a>
+							<a class="navbar-item"> projet 3 </a>
 						</div>
 					</div>
 					<a class="navbar-item"> Contact </a>
@@ -82,13 +70,14 @@
 			<div class="blockMusic block">
 				<div class="dropdown is-hoverable">
 					<div class="dropdown-trigger">
-						<button class="button is-black" aria-haspopup="true" aria-controls="dropdown-menu4">
+						<button class="button is-black" aria-haspopup="true" aria-controls="dropdown-menu3">
 							<span>Genre</span>
 							<span class="icon is-small">
 								<i class="fas fa-angle-down" aria-hidden="true"></i>
 							</span>
 						</button>
 					</div>
+
 					<div class="dropdown-menu" id="dropdown-menu3" role="menu">
 						<div class="dropdown-content">
 							<a onclick="Genre('trap')" class="dropdown-item"> Trap </a>
@@ -183,11 +172,16 @@
 							</div>
 						</div>
 					</span>
-					<span class="titres reggae"> </span>
-					<span class="titres drill"> </span>
-					<span class="titres afro"> </span>
+					<span class="titres reggae">
+						<p class="infoMusic">Ton artiste préféré n'a pas encore sorti de musique dans le genre <strong>reggae</strong>.</p>
+					</span>
+					<span class="titres drill">
+						<p class="infoMusic">Ton artiste préféré n'a pas encore sorti de musique dans le genre <strong>drill</strong>.</p></span
+					>
+					<span class="titres afro">
+						<p class="infoMusic">Ton artiste préféré n'a pas encore sorti de musique dans le genre <strong>afro</strong>.</p></span
+					>
 				</div>
-				<p class="infoMusic">Passes ta souris sur le bouton "genre" et choisis le genre que tu veux ecouter</p>
 			</div>
 		</div>
 

@@ -5,6 +5,14 @@
 	text-transform: uppercase;
 	margin-bottom: 25px;
 }
+.subtitle {
+	text-align: center;
+	color: white !important;
+	font-family: "Noto Sans SC", sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	text-decoration: underline;
+}
 
 .container-presentation {
 	margin-top: 20px;

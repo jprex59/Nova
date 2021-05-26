@@ -69,8 +69,6 @@ nav {
 	flex-direction: column;
 }
 .infoMusic {
-	position: absolute;
-	bottom: 0;
 	padding: 20px;
 	text-align: justify;
 }
