@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/index.css" type="text/css" />
+		<link rel="stylesheet" href="./css/all.css" type="text/css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet" />
@@ -14,14 +15,18 @@
 		<title>Home</title>
 	</head>
 	<body>
-		<div class="container">
-			<div class="title is-1">Nova®</div>
-		</div>
+		<section class="section is-small">
+			<div class="container">
+				<div class="title is-1">Nova®</div>
+				<div class="subtitle is-6">Clics sur les panneaux </div>
+			</div>
+		</section>
+		
 		<div class="section-presentation">
 			<div class="container container-presentation">
 				<div class="panel-responsive">
 					<a href="index.html#about" class="presentation-panel panel1">
-						<div class=" ">
+						<div>
 							<div class="container">
 								<h1 class="title is-3 is-centered title-panel">About</h1>
 							</div>
@@ -36,23 +41,26 @@
 							</div>
 						</div>
 					</a>
-					<div class="presentation-panel panel2">
-						<div class="container">
-							<h1 class="title is-3 is-centered title-panel">Music</h1>
+					<a href="music.html" class="presentation-panel panel2">
+						<div>
+							<div class="container">
+								<h1 class="title is-3 is-centered title-panel">Music</h1>
+							</div>
+							<div class="info">
+								<p class="description">
+									Capitale animée du Japon, Tokyo associe les styles ultramodernes et traditionnels, dans un mélange de
+									gratte-ciel aux néons lumineux et de temples anciens. Le somptueux Meiji-jingū est un sanctuaire shinto réputé
+									pour son entrée imposante et les bois qui l'environnent. Le palais impérial est entouré de vastes jardins
+									publics. Les nombreux musées de la ville proposent des expositions allant de l'art classique, au musée national
+									de Tokyo, à un théâtre kabuki reconstruit, au musée d'Edo-Tokyo.
+								</p>
+							</div>
 						</div>
-						<div class="info">
-							<p class="description">
-								Capitale animée du Japon, Tokyo associe les styles ultramodernes et traditionnels, dans un mélange de
-								gratte-ciel aux néons lumineux et de temples anciens. Le somptueux Meiji-jingū est un sanctuaire shinto réputé
-								pour son entrée imposante et les bois qui l'environnent. Le palais impérial est entouré de vastes jardins
-								publics. Les nombreux musées de la ville proposent des expositions allant de l'art classique, au musée national
-								de Tokyo, à un théâtre kabuki reconstruit, au musée d'Edo-Tokyo.
-							</p>
-						</div>
-					</div>
+					</a>
 				</div>
 				<div class="panel-responsive">
-					<div class="presentation-panel panel3">
+					<a href="projets.html" class="presentation-panel panel3">
+					<div>
 						<div class="container">
 							<h1 class="title is-3 is-centered title-panel">Projets</h1>
 						</div>
@@ -66,6 +74,7 @@
 							</p>
 						</div>
 					</div>
+					</a>
 					<div class="presentation-panel panel4">
 						<div class="container">
 							<h1 class="title is-3 is-centered title-panel">Contact</h1>
@@ -84,7 +93,7 @@
 			</div>
 		</div>
 
-		<nav class="navbar is-black" role="navigation" aria-label="main navigation">
+		<nav class="navbar is-black navbar-menu-own" role="navigation" aria-label="main navigation">
 			<div class="navbar-brand">
 				<a class="navbar-item" href="#">
 					<img src="./images/menu/logo.jpeg" width="30px" height="50px" />
@@ -101,21 +110,18 @@
 				<div class="navbar-start">
 					<a href="index.html#about" class="navbar-item"> About </a>
 
-					<a class="navbar-item"> Music </a>
-
-					<a class="navbar-item"> Contact </a>
+					<a href="music.html" class="navbar-item"> Musics </a>
 
 					<div class="navbar-item has-dropdown is-hoverable">
-						<a class="navbar-link"> Projets </a>
+						<a href="projets.html" class="navbar-link"> Projets </a>
 
 						<div class="navbar-dropdown">
-							<a class="navbar-item"> About </a>
-							<a class="navbar-item"> Jobs </a>
-							<a class="navbar-item"> Contact </a>
-							<hr class="navbar-divider" />
-							<a class="navbar-item"> Report an issue </a>
+							<a class="navbar-item"> Projet1 </a>
+							<a class="navbar-item"> Projet2 </a>
+							<a class="navbar-item"> projet 3 </a>
 						</div>
 					</div>
+					<a class="navbar-item"> Contact </a>
 				</div>
 
 				<div class="navbar-end">
@@ -129,7 +135,34 @@
 				</div>
 			</div>
 		</nav>
-		<section id="about" class="section is-medium section-tile">
+		<section class="section is-medium section-tile">
+			<nav class="level level-own" id="about">
+			<div class="level-item has-text-centered">
+				<div>
+				<p class="heading">Musique</p>
+				<p class="title">3,456</p>
+				</div>
+			</div>
+			<div class="level-item has-text-centered">
+				<div>
+				<p class="heading">Spotify</p>
+				<p class="title">123</p>
+				</div>
+			</div>
+			<div class="level-item has-text-centered">
+				<div>
+				<p class="heading">Youtube</p>
+				<p class="title">456K</p>
+				</div>
+			</div>
+			<div class="level-item has-text-centered">
+				<div>
+				<p class="heading">?</p>
+				<p class="title">789</p>
+				</div>
+			</div>
+			</nav>
+	
 			<div class="container container-tile">
 				<div class="tile is-ancestor">
 					<div class="tile is-vertical is-8">
@@ -191,5 +224,6 @@
 			</div>
 		</section>
 		<script src="./js/index.js"></script>
+		<script src="./js/menuDeroulant.js"></script>
 	</body>
 </html>

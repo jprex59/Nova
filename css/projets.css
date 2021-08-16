@@ -1,0 +1,39 @@
+body {
+	padding-top: 57px !important;
+}
+nav {
+	position: fixed !important;
+	width: 100%;
+	top: 0;
+}
+.container-own {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.card-own {
+	width: 270px;
+	height: 270px;
+	position: relative;
+}
+.fa-plus {
+	position: absolute;
+	bottom: 7px;
+	right: 7px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.fa-plus:hover {
+	transform: rotate(180deg);
+}
+.card1 {
+	background-image: url("../images/Presentation/astronaute.jpeg");
+	background-position: center;
+	background-size: cover;
+}
+
+.modal-card-body {
+	color: black;
+}

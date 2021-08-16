@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/all.css" type="text/css" />
+		<link rel="stylesheet" href="./css/music.css" type="text/css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/b8f4ab5226.js" crossorigin="anonymous"></script>
+		<title>Music</title>
+	</head>
+	<body>
+		<nav class="navbar is-black" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="index.html">
+					<img src="./images/menu/logo.jpeg" width="30px" height="50px" />
+				</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start">
+					<a href="index.html#about" class="navbar-item"> About </a>
+
+					<a href="music.html" class="navbar-item"> Musics </a>
+
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="projets.html" class="navbar-link"> Projets </a>
+
+						<div class="navbar-dropdown">
+							<a class="navbar-item"> Projet1 </a>
+							<a class="navbar-item"> Projet2 </a>
+							<a class="navbar-item"> projet 3 </a>
+						</div>
+					</div>
+					<a class="navbar-item"> Contact </a>
+				</div>
+
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="buttons">
+							<a href="#" class="button is-white">
+								<strong>up</strong>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!----Debut page presentation------->
+		<div class="block-presentation">
+			<div class="swing-Center">
+				<a class="button-swing" href="#music"><i class="far fa-play-circle"></i> Ma musique</a>
+			</div>
+			<div class="presentation img1"></div>
+			<div class="presentation img2"></div>
+		</div>
+		<!---Music-->
+		<div id="music" class="block">
+			<div class="blockMusic block">
+				<div class="dropdown is-hoverable">
+					<div class="dropdown-trigger">
+						<button class="button is-black" aria-haspopup="true" aria-controls="dropdown-menu3">
+							<span>Genre</span>
+							<span class="icon is-small">
+								<i class="fas fa-angle-down" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+
+					<div class="dropdown-menu" id="dropdown-menu3" role="menu">
+						<div class="dropdown-content">
+							<a onclick="Genre('trap')" class="dropdown-item"> Trap </a>
+							<a onclick="Genre('house')" class="dropdown-item"> House </a>
+							<a onclick="Genre('afro')" class="dropdown-item"> Afro </a>
+							<a onclick="Genre('drill')" class="dropdown-item"> Drill </a>
+							<a onclick="Genre('pop')" class="dropdown-item"> Pop </a>
+							<a onclick="Genre('reggae')" class="dropdown-item"> Reggae </a>
+							<hr class="dropdown-divider" />
+							<a onclick="Genre('all')" class="dropdown-item"> Tous </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="music">
+				<div class="container container-own">
+					<span class="titres pop">
+						<div class="titre block">
+							<iframe
+								width="50%"
+								height="180"
+								scrolling="no"
+								frameborder="no"
+								allow="autoplay"
+								src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1055882800&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+							></iframe>
+
+							<div class="Container-buttons">
+								<button class="button is-black">Spotify</button>
+								<button class="button is-black">Soundcloud</button>
+								<button class="button is-black">Deezer</button>
+								<p class="DetailsMusic">Collab</p>
+								<p class="DetailsMusic">Pop</p>
+							</div>
+						</div>
+					</span>
+					<span class="titres trap">
+						<div class="titre block">
+							<iframe
+								width="50%"
+								height="180"
+								scrolling="no"
+								frameborder="no"
+								allow="autoplay"
+								src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1055881024&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+							></iframe>
+
+							<div class="Container-buttons">
+								<button class="button is-black">Spotify</button>
+								<button class="button is-black">Soundcloud</button>
+								<button class="button is-black">Deezer</button>
+								<p class="DetailsMusic">Collab</p>
+								<p class="DetailsMusic">Trap</p>
+							</div>
+						</div>
+						<div class="titre block">
+							<iframe
+								width="50%"
+								height="180"
+								scrolling="no"
+								frameborder="no"
+								allow="autoplay"
+								src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1055870941&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+							></iframe>
+
+							<div class="Container-buttons">
+								<button class="button is-black">Spotify</button>
+								<button class="button is-black">Soundcloud</button>
+								<button class="button is-black">Deezer</button>
+								<p class="DetailsMusic">Collab</p>
+								<p class="DetailsMusic">Trap</p>
+							</div>
+						</div>
+					</span>
+					<span class="titres house">
+						<div class="titre block">
+							<iframe
+								width="50%"
+								height="180"
+								scrolling="no"
+								frameborder="no"
+								allow="autoplay"
+								src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1055875273&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+							></iframe>
+
+							<div class="Container-buttons">
+								<button class="button is-black">Spotify</button>
+								<button class="button is-black">Soundcloud</button>
+								<button class="button is-black">Deezer</button>
+								<p class="DetailsMusic">Collab</p>
+								<p class="DetailsMusic">House</p>
+							</div>
+						</div>
+					</span>
+					<span class="titres reggae">
+						<p class="infoMusic">Ton artiste préféré n'a pas encore sorti de musique dans le genre <strong>reggae</strong>.</p>
+					</span>
+					<span class="titres drill">
+						<p class="infoMusic">Ton artiste préféré n'a pas encore sorti de musique dans le genre <strong>drill</strong>.</p></span
+					>
+					<span class="titres afro">
+						<p class="infoMusic">Ton artiste préféré n'a pas encore sorti de musique dans le genre <strong>afro</strong>.</p></span
+					>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/menuDeroulant.js"></script>
+		<script src="./js/music.js"></script>
+	</body>
+</html>

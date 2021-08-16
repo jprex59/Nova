@@ -1,24 +1,17 @@
-* {
-	padding: 0;
-	margin: 0;
-}
-html {
-	scroll-behavior: smooth;
-}
-
-body {
-	background-color: black;
-	height: 300vh;
-	color: white !important;
-	font-family: "Orbitron", sans-serif !important;
-}
-
 .title {
 	text-align: center;
 	color: white !important;
 	font-family: "Noto Sans SC", sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 25px;
+}
+.subtitle {
+	text-align: center;
+	color: white !important;
+	font-family: "Noto Sans SC", sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	text-decoration: underline;
 }
 
 .container-presentation {
@@ -27,6 +20,8 @@ body {
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
+	height: 100vh;
+	flex-direction: column;
 }
 
 .presentation-panel {
@@ -103,17 +98,6 @@ body {
 	opacity: 1.5;
 }
 
-nav {
-	transform: translateX(-4000px);
-	transition: all 0.5s;
-	width: 100%;
-	top: 0em;
-}
-
-nav.sticky {
-	transform: translate(0);
-	position: fixed;
-}
 .container-tile {
 	border-radius: 10px;
 	padding: 5px;
@@ -139,6 +123,21 @@ nav.sticky {
 	margin-top: 10px !important;
 }
 
+.navbar-menu-own {
+	transform: translateX(-4000px);
+	transition: all 0.5s;
+	width: 100%;
+	top: 0em;
+}
+
+.navbar-menu-own.sticky {
+	transform: translate(0);
+	position: fixed;
+}
+
+.level-own {
+	margin-bottom: 50px !important;
+}
 @media all and (max-width: 700px) {
 	.panel-responsive {
 		width: 100%;
